@@ -11,7 +11,7 @@ input.disabled = true
 
 
 
-// ---------------- RENDER TASK ----------------
+
 const renderTask = (task) => {
 
 const li = document.createElement("li")
@@ -30,7 +30,7 @@ list.append(li)
 
 
 
-// ---------------- TASK TEXT ----------------
+
 const renderSpan = (li, text) => {
 
 const span = li.appendChild(document.createElement("span"))
@@ -41,7 +41,7 @@ span.innerHTML = text
 
 
 
-// ---------------- DELETE ICON ----------------
+
 const renderLink = (li, id) => {
 
 const a = li.appendChild(document.createElement("a"))
@@ -74,7 +74,7 @@ list.removeChild(li_to_remove)
 
 
 
-// ---------------- GET TASKS ----------------
+
 const getTasks = () => {
 
 todos.getTasks()
@@ -97,7 +97,7 @@ input.disabled = false
 
 
 
-// ---------------- ADD TASK ----------------
+
 input.addEventListener("keypress", (event) => {
 
 if(event.key === "Enter"){
@@ -130,5 +130,5 @@ input.focus()
 
 
 
-// ---------------- LOAD TASKS ----------------
+
 getTasks()
